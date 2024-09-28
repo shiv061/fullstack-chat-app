@@ -1,0 +1,12 @@
+{
+  "name": "fullstack-chat-app",
+  "version": "1.0.0",
+  "description": "Fullstack chat application using React for frontend, Fastify for backend and PostgreSQ: as Database",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
