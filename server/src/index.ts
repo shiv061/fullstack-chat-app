@@ -5,6 +5,7 @@ import { authRoute } from "./routes/auth.route.";
 import { prismaMiddleware } from "./middleware/prismaMiddleware";
 import jsonwebtoken from "@fastify/jwt";
 import { userRoute } from "./routes/user.route";
+import { chatRoute } from "./routes/chat.route";
 
 const server = fastify();
 
@@ -21,6 +22,7 @@ server.register(prismaMiddleware);
 // routes
 server.register(authRoute, { prefix: "/api/auth" });
 server.register(userRoute, { prefix: "/api/users" });
+server.register(chatRoute, { prefix: "/api/chat" });
 
 server.listen({ port: 8080 }, (err, address) => {
   if (err) {
